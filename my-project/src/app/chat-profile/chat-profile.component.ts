@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+// chat-profile.component.ts Stateless Component
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -8,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatProfileComponent implements OnInit {
 
-  constructor() {}
+  constructor() {
+    console.log('');
+  }
 
   ngOnInit() {
+    console.log('');  
   }
 
 }

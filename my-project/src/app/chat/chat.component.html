@@ -1,10 +1,27 @@
 <!-- chat.component.html -->
 <p>
-  chat works! {{component}}
+  chat works!
+  {{component}}
 </p>
 
 <div class="chat">
-  <app-chat-profile></app-chat-profile>
-  <app-chat-search></app-chat-search>
-  <app-chat-list></app-chat-list>
+
+    <!-- ChatProfileComponent -->
+    <app-chat-profile
+        [user]="chatUser"
+        (statusChange)="onStatusChange($event)">
+    </app-chat-profile>
+
+    <!-- ChatSearchComponent -->
+    <app-chat-search
+        [term]="chatTerm"
+        (searchChange)="onSearchChange($event)">
+    </app-chat-search>
+
+    <!-- ChatListComponent -->
+    <app-chat-list
+        [friends]="chatFriends"
+        (contactSelect)="onContactSelect($event)">
+    </app-chat-list>
+
 </div>

@@ -1,4 +1,4 @@
-// chat.component.ts
+// chat.component.ts example of Statefull Component
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ChatProfileComponent }                 from '../chat-profile/chat-profile.component';
 import { ChatSearchComponent }                  from '../chat-search/chat-search.component';
@@ -17,8 +17,10 @@ export class ChatComponent implements OnInit {
   chatUser:    {};
   chatTerm:    string;
   chatFriends: [{}];
+  //friends:     [string];
 
   constructor() {
+    console.log('ChatComponent constructor');
     this.component = 'ChatComponent';
     this.chatUser = {
       name: 'Todd Motto',
@@ -30,5 +32,19 @@ export class ChatComponent implements OnInit {
 
   ngOnInit() {
     console.log('ChatComponent initialized');
+  }
+
+  // Event Binding
+  onStatusChange(event) {
+    // User changes their status
+  }
+
+  onSearchChange(event) {
+    // User enters info to search users
+    this.friends = [<filtered-collection>];
+  }
+
+  onContactSelect(event) {
+    // user selects new contact to chat
   }
 }

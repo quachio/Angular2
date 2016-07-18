@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+// ChatListComponent -> chat-list.component.ts
+import { Component, OnInit }    from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'app-chat-list',
+  selector:    'app-chat-list',
   templateUrl: 'chat-list.component.html',
-  styleUrls: ['chat-list.component.css']
+  styleUrls:   ['chat-list.component.css'],
 })
 export class ChatListComponent implements OnInit {
   component: {
@@ -14,6 +15,7 @@ export class ChatListComponent implements OnInit {
   };
 
   constructor() {
+    console.log('');
     this.component = {
       selector: 'app-chat-list',
       templateUrl: 'chat-list.component.html',
