@@ -33,7 +33,7 @@ export class ChatProfileComponent implements OnInit {
     };
 
     this.userStatus = (newStatus ? 'Online' : 'Offline');
-    this.statusChange.emit({ user });
+    this.statusChange.emit({ user }); // Pass data from child component to parent
   }
 
 }
