@@ -34,6 +34,10 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/chat',
+  'app/chat-profile',
+  'app/chat-search',
+  'app/chat-list',
   /** @cli-barrel */
 ];
 
