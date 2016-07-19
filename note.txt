@@ -43,7 +43,7 @@ TWO-WAY BINDING
       </todo-cmp>
   </template>
 
-  WHY DO WE US BINDING
+  WHY DO WE USE BINDING
   - Bind to any native element(Web Component included)
   - No Angular 2 component wrappers
   - Consistent syntax across all code

@@ -38,6 +38,9 @@ const barrels: string[] = [
   'app/chat-profile',
   'app/chat-search',
   'app/chat-list',
+  'app/inbox',
+  'app/inbox-message',
+  'app/dashboard',
   /** @cli-barrel */
 ];
 

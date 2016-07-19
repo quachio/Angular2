@@ -41,7 +41,7 @@ export class ChatComponent implements OnInit {
 
   onSearchChange(event) {
     // User enters info to search users
-    this.friends = [<filtered-collection>];
+    //this.friends = [<filtered-collection>];
   }
 
   onContactSelect(event) {

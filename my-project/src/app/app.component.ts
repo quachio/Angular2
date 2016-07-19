@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   message: string;
 
   constructor() {
+    console.log('AppComponent constructor');
     this.title = 'app work!';
     this.message = 'Hello world';
   };
